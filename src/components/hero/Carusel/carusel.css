@@ -1,0 +1,13 @@
+.slick-dots {
+  position: absolute;
+  top: 0px;
+  right: 0px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end;
+  justify-content: center;
+}
+.slick-dots > li::before {
+  color: blue;
+  font-size: 24px;
+}
