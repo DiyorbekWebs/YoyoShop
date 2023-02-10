@@ -8,7 +8,7 @@ import Hero from "../../components/hero/Hero";
 import LogoBrend from "../../components/Logos/BrendLogo";
 import NewProduct from "../../components/NewProduct/NewProduct";
 import Products from "../../components/Products/Product";
-import TopProduct from "../../components/topproduct/TopProduct";
+import TopProduct from "../../components/TopProduct/TopProduct";
 import Users from "../../components/Users/User";
 
 export default function LayoutHome() {
@@ -21,14 +21,14 @@ export default function LayoutHome() {
         <Hero />
         <Products />
         <TopProduct />
-        <NewProduct/>
-        <About/>
-        <Users/>
-        <LogoBrend/>
+        <NewProduct />
+        <About />
+        <Users />
+        <LogoBrend />
         <Contact></Contact>
       </main>
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </>
   );
