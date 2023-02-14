@@ -62,11 +62,9 @@ const AllCategoryBtn = styled.div`
   font-size: 18px;
   font-weight: 500;
   line-height: 15px;
-  letter-spacing: 0em;
-  text-align: left;
   color: #ff5c00;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 5px;
   padding: 11px 23px;
   border: 1px solid #ff5c00;

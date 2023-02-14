@@ -44,7 +44,7 @@ const Item = styled.li`
 const Text1 = styled.h3`
   font-family: SF Pro Display;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 38px;
   letter-spacing: 0em;
   text-align: left;
@@ -57,6 +57,8 @@ const Text2 = styled.p`
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
+  color: #1f1e14;
+  opacity: 0.5;
 `;
 export default function About() {
   return (
@@ -83,11 +85,11 @@ export default function About() {
                 </Item>
                 <Item>
                   <Text1>✅ 254+</Text1>
-                  <Text2>Филлиалов</Text2>
+                  <Text2>выполненных доставок</Text2>
                 </Item>
               </List>
             </Texts>
-            <img src={AboutImg} alt="" />
+            <img src={AboutImg} alt="aboutImg" />
           </Box>
         </div>
       </Aboutt>

@@ -65,6 +65,48 @@ const Item2 = styled(Item)`
 const Paragrf2 = styled(Paragrf)`
   width: 247px;
 `;
+const FooterBottom = styled.div`
+  padding: 16px 30px;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+const List2 = styled.ul`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+`;
+const Itemm2 = styled.li`
+  font-family: SF Pro Display;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 0.75;
+  
+`;
+const Design = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Text1 = styled.p`
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  text-align: right;
+`;
+const Text2 = styled.h1`
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 14px;
+`;
 export default function Footer() {
   return (
     <>
@@ -121,6 +163,17 @@ export default function Footer() {
             </List>
           </Box>
         </div>
+        <FooterBottom>
+          <List2>
+            <Itemm2>Политика безопасности</Itemm2>
+            <Itemm2>Условия соглашения</Itemm2>
+            <Itemm2>Публичная оферта</Itemm2>
+          </List2>
+          <Design>
+            <Text1>Designed by:</Text1>
+            <Text2>Getter</Text2>
+          </Design>
+        </FooterBottom>
       </Footerr>
     </>
   );

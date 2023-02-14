@@ -1,4 +1,5 @@
 import React from "react";
+import Slider from "react-slick";
 import styled from "styled-components";
 import Card from "./Card";
 const User = styled.div`
@@ -6,6 +7,7 @@ const User = styled.div`
   display: flex;
   flex-direction: column;
   gap: 28px;
+  overflow: hidden;
 `;
 const Tittle = styled.h1`
   font-family: SF Pro Display;
@@ -19,10 +21,19 @@ const Cards = styled.div`
   display: flex;
   gap: 20px;
   align-items: center;
-  overflow: hidden;
 `;
 const Box = styled.div``;
 export default function Users() {
+  var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow:3.3,
+    slidesToScroll: 1,
+  };
+  const Sliderr = styled(Slider)`
+    width: 100% !important;
+    height: 280px;
+`;
   return (
     <>
       <User>
@@ -31,7 +42,7 @@ export default function Users() {
             <Tittle>Что говорят наши клиенты</Tittle>
           </Box>
         </div>
-        <Cards>
+        <Sliderr {...settings}>
           <Card />
           <Card />
           <Card />
@@ -42,7 +53,24 @@ export default function Users() {
           <Card />
           <Card />
           <Card />
-        </Cards>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </Sliderr>
       </User>
     </>
   );

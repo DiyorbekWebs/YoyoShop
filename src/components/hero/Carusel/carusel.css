@@ -1,5 +1,5 @@
 .slick-dots {
-  position: absolute;
+  position: relative;
   top: 0px;
   right: 0px !important;
   display: flex !important;

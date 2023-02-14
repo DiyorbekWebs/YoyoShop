@@ -10,6 +10,7 @@ const Contactt = styled.div`
 const Box = styled.div`
   display: flex;
   padding: 0px 80px;
+  gap: 20px;
 `;
 const Card = styled.div`
   padding: 66px 56px 47px 46px;
@@ -19,6 +20,7 @@ const Card = styled.div`
   gap: 18px;
   box-shadow: 0px 0px 10px lightgrey;
 `;
+
 const Text1 = styled.p`
   font-family: SF Pro Display;
   font-size: 14px;
@@ -45,9 +47,9 @@ const Tittle = styled.h1`
 `;
 const LocationBtn = styled.button`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 7px;
-  font-family: Inter;
+  font-family: SF Pro Display;
   font-size: 14px;
   font-weight: 500;
   line-height: 15px;
@@ -86,7 +88,7 @@ const Text2 = styled.p`
 const InputBox = styled.div`
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 110px;
   padding: 4px 4px 4px 27px;
   border: 1px solid lightgrey;
   border-radius: 10px;
@@ -99,6 +101,21 @@ const Btn = styled.div`
   padding: 14px 23px;
   border: 1px solid black;
   border-radius: 10px;
+`;
+const Elipse = styled.div`
+position: absolute;
+  width: 100%;
+  height: 500px;
+  z-index: 3;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 100%
+  );
+  /* background-color: red; */
+`;
+const Div = styled.div`
+position: relative;
 `;
 export default function Contact() {
   return (
@@ -141,7 +158,8 @@ export default function Contact() {
                 <Btn>{">"}</Btn>
               </InputBox>
             </Card>
-            <div>
+            <Div>
+              <Elipse></Elipse>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7175.200463171542!2d69.32552836283764!3d41.31524555482112!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE4JzU0LjAiTiA2OcKwMTknNDQuOCJF!5e0!3m2!1sru!2s!4v1676050043943!5m2!1sru!2s"
                 width={750}
@@ -151,7 +169,7 @@ export default function Contact() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
-            </div>
+            </Div>
           </Box>
         </div>
       </Contactt>

@@ -7,7 +7,11 @@ const Cardd = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 28px;
-  background-color: #f5f3f3;
+  background: #ffffff;
+  box-shadow: 14px 11px 134px rgba(60, 68, 99, 0.05);
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 `;
 const Paragrf = styled.p`
   font-family: SF Pro Display;
@@ -45,13 +49,14 @@ const Text2 = styled.p`
   line-height: 15px;
   letter-spacing: 0em;
   text-align: left;
-  opacity: 0.75;
+  color: #1f1814;
+  opacity: 0.4;
 `;
 export default function Card() {
   return (
     <>
       <Cardd>
-        <Paragrf>все товары есть в наличии на складе</Paragrf>
+        <Paragrf>все товары есть в наличии на складе✅</Paragrf>
         <User>
           <img src={UserImg} alt="" />
           <Texts>

@@ -12,26 +12,21 @@ export const Carusel = () => {
     slidesToScroll: 1,
     fade: true,
     autoplay: true,
-    speed: 500,
     autoplaySpeed: 5000,
-    cssEase: "linear"
+    cssEase: "linear",
   };
-  const Div = styled.div`
-    width: 100%;
-    height: 80vh;
-    background-color: red;
-  `;
+ 
   const Sliderr = styled(Slider)`
+    width: 100%;
+    height: 490px !important;
     position: relative;
   `;
   return (
-    <div>
       <Sliderr {...settings}>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </Sliderr>
-    </div>
   );
 };

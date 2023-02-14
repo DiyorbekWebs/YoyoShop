@@ -9,7 +9,6 @@ const Card = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 110px;
-
 `;
 const Texts = styled.div`
   display: flex;
@@ -38,7 +37,7 @@ const Tittle = styled.h1`
 const Cost = styled.p`
   font-family: SF Pro Display;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
@@ -46,7 +45,7 @@ const Cost = styled.p`
   margin-bottom: 58px;
 `;
 const Linnk = styled.p`
-  font-family: Inter;
+  font-family: SF Pro Display;
   font-size: 14px;
   font-weight: 500;
   line-height: 15px;
