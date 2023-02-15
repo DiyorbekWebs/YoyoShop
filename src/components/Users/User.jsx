@@ -6,7 +6,6 @@ const User = styled.div`
   padding: 45px 0px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
   overflow: hidden;
 `;
 const Tittle = styled.h1`
@@ -17,11 +16,7 @@ const Tittle = styled.h1`
   letter-spacing: 0em;
   text-align: left;
 `;
-const Cards = styled.div`
-  display: flex;
-  gap: 20px;
-  align-items: center;
-`;
+
 const Box = styled.div``;
 export default function Users() {
   var settings = {
@@ -33,6 +28,10 @@ export default function Users() {
   const Sliderr = styled(Slider)`
     width: 100% !important;
     height: 280px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
 `;
   return (
     <>

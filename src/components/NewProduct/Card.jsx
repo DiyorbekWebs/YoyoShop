@@ -64,9 +64,10 @@ const ShopBtn = styled.button`
   gap: 11px;
   background-color: transparent;
   padding: 9px 12px;
+  border: 1px solid #333333;
   border-radius: 100px;
 `;
-export default function Card({img}) {
+export default function Card({ img }) {
   return (
     <>
       <Cardd>

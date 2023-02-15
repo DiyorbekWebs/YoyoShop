@@ -13,18 +13,18 @@ const Nav = styled.nav`
   gap: 14px;
 `;
 const HeaderTop = styled.ul`
-  display: flex;
-  gap: 20px;
-  justify-content: flex-start;
-  align-items: center;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+gap: 20px;
 `;
 const Item = styled.li`
-  font-family: SF Pro Display;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 15px;
-  letter-spacing: 0em;
-  text-align: left;
+ font-family: Inter;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+color: #333333;
 `;
 const HeaderBottom = styled.div`
   display: flex;
@@ -77,13 +77,13 @@ const Right = styled.div`
 `;
 const Icons = styled.ul`
   display: flex;
-  gap: 47px;
+  gap: 45px;
   align-items: center;
 `;
 const Icon = styled.li`
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   font-size: 24px;
 `;
 const LoginBtn = styled.div`

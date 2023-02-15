@@ -19,8 +19,10 @@ import logo5 from "./logo (5).png";
 import logo6 from "./logo (6).png";
 import logo7 from "./logo (7).png";
 import logo8 from "./logo (8).png";
+import Map from "./Frame 3.png";
 
 export {
+  Map,
   Logo,
   Analytcs,
   BackHero,

@@ -7,10 +7,9 @@ import {
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsTelephone } from "react-icons/bs";
-
 import styled from "styled-components";
 const Footerr = styled.footer`
-  border-top: 1px solid lightgrey;
+border: 1px solid #EEEEEE;
 `;
 const List = styled.ul`
   display: flex;
@@ -26,19 +25,28 @@ const Box = styled.div`
 `;
 const Tittle = styled.h1`
   font-family: SF Pro Display;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 28px;
-  letter-spacing: 0em;
-  text-align: left;
-`;
-const Item = styled.li``;
+font-size: 20px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: #121212;
 
+`;
+const Item = styled.li`
+font-family: SF Pro Display;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color: #333333;
+`;
 const Socials = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 28px;
+  margin-top: 10px;
 `;
 const ListIcon = styled.ul`
   display: flex;
@@ -46,7 +54,7 @@ const ListIcon = styled.ul`
   gap: 38px;
 `;
 const Icon = styled.li`
-  font-size: 24px;
+  font-size: 22px;
 `;
 const Paragrf = styled.p`
   font-family: SF Pro Display;
@@ -67,7 +75,7 @@ const Paragrf2 = styled(Paragrf)`
 `;
 const FooterBottom = styled.div`
   padding: 16px 30px;
-  border-top: 1px solid lightgray;
+  border: 1px solid #EEEEEE;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,13 +86,12 @@ const List2 = styled.ul`
   gap: 20px;
 `;
 const Itemm2 = styled.li`
-  font-family: SF Pro Display;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 14px;
-  letter-spacing: 0em;
-  text-align: left;
-  opacity: 0.75;
+  font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: #333333;
   
 `;
 const Design = styled.div`
@@ -97,8 +104,6 @@ const Text1 = styled.p`
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  /* identical to box height */
-
   text-align: right;
 `;
 const Text2 = styled.h1`
@@ -107,6 +112,10 @@ const Text2 = styled.h1`
   font-size: 12px;
   line-height: 14px;
 `;
+const Item3 = styled(Item2)`
+  color: #5B5B5B;
+
+`
 export default function Footer() {
   return (
     <>
@@ -148,18 +157,18 @@ export default function Footer() {
             </List>
             <List>
               <Tittle>Наши контакты</Tittle>
-              <Item2>
+              <Item3>
                 <HiOutlineLocationMarker />
                 <Paragrf2>Учтепинский район, 14 квартал, ул. Лутфий</Paragrf2>
-              </Item2>
-              <Item2>
+              </Item3>
+              <Item3>
                 <BsTelephone />
                 <Paragrf>+998 71 200 05 99</Paragrf>
-              </Item2>
-              <Item2>
+              </Item3>
+              <Item3>
                 <AiOutlineMail />
                 hello@kidion.uz
-              </Item2>
+              </Item3>
             </List>
           </Box>
         </div>

@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import "../../assets/fonts/stylesheet.css";
+import { Map } from "../../assets/img/img";
+import { BiChevronRight } from "react-icons/bi";
 const Contactt = styled.div`
   padding: 0px 0px 95px 0px;
 `;
@@ -11,6 +13,7 @@ const Box = styled.div`
   display: flex;
   padding: 0px 80px;
   gap: 20px;
+  position: relative;
 `;
 const Card = styled.div`
   padding: 66px 56px 47px 46px;
@@ -19,6 +22,7 @@ const Card = styled.div`
   align-items: flex-start;
   gap: 18px;
   box-shadow: 0px 0px 10px lightgrey;
+  background-color: #ffff;
 `;
 
 const Text1 = styled.p`
@@ -96,11 +100,24 @@ const InputBox = styled.div`
 const Input = styled.input`
   outline: none;
   border: none;
+  &::placeholder{
+    font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 108.5%;
+color: #121212;
+opacity: 0.4;
+}
 `;
 const Btn = styled.div`
-  padding: 14px 23px;
+  padding: 14px 22px;
   border: 1px solid black;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
 `;
 const Elipse = styled.div`
 position: absolute;
@@ -117,6 +134,12 @@ position: absolute;
 const Div = styled.div`
 position: relative;
 `;
+const Mapp = styled.img`
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+`
 export default function Contact() {
   return (
     <>
@@ -155,21 +178,10 @@ export default function Contact() {
               </Text2>
               <InputBox>
                 <Input placeholder="Ваш email address" type="text" />
-                <Btn>{">"}</Btn>
+                <Btn><BiChevronRight/></Btn>
               </InputBox>
             </Card>
-            <Div>
-              <Elipse></Elipse>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7175.200463171542!2d69.32552836283764!3d41.31524555482112!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE4JzU0LjAiTiA2OcKwMTknNDQuOCJF!5e0!3m2!1sru!2s!4v1676050043943!5m2!1sru!2s"
-                width={750}
-                height={500}
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </Div>
+            <Mapp src={Map} alt="" />
           </Box>
         </div>
       </Contactt>

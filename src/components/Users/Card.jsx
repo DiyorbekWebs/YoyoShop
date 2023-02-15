@@ -7,11 +7,10 @@ const Cardd = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 28px;
-  background: #ffffff;
-  box-shadow: 14px 11px 134px rgba(60, 68, 99, 0.05);
-  margin-left: 20px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  background: #FFFFFF;
+  box-shadow: 11px 11px 134px rgba(60, 68, 99, 0.05);
+  margin: 78px 20px 50px 0px;
+
 `;
 const Paragrf = styled.p`
   font-family: SF Pro Display;
