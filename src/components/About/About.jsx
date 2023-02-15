@@ -5,7 +5,7 @@ const Aboutt = styled.section``;
 const Box = styled.div`
   display: flex;
   align-items: center;
-  padding: 0px 50px;
+  gap: 100px;
 `;
 const Texts = styled.div`
   display: flex;

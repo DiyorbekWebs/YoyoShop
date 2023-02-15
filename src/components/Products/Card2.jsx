@@ -54,6 +54,8 @@ const Linnk = styled.p`
   display: flex;
   align-items: center;
   gap: 7px;
+  cursor: pointer;
+
 `;
 export default function Card2() {
   return (

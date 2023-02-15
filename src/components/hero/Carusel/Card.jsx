@@ -56,6 +56,7 @@ const Btn = styled.button`
   display: flex;
   align-items: flex-start;
   gap: 7px;
+  cursor: pointer;
 `;
 export default function Card() {
   return (

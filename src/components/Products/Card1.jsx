@@ -50,6 +50,7 @@ const Linnk = styled.p`
   display: flex;
   align-items: center;
   gap: 7px;
+  cursor: pointer;
 `;
 const Text = styled.div`
   display: flex;

@@ -11,7 +11,6 @@ const Contactt = styled.div`
 `;
 const Box = styled.div`
   display: flex;
-  padding: 0px 80px;
   gap: 20px;
   position: relative;
 `;
@@ -21,8 +20,8 @@ const Card = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
-  box-shadow: 0px 0px 10px lightgrey;
-  background-color: #ffff;
+  background: #FFFFFF;
+box-shadow: 17px 8px 54px rgba(0, 0, 0, 0.05);
 `;
 
 const Text1 = styled.p`
@@ -112,7 +111,7 @@ opacity: 0.4;
 `;
 const Btn = styled.div`
   padding: 14px 22px;
-  border: 1px solid black;
+  border: 2px solid #b9b9b9;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -129,7 +128,6 @@ position: absolute;
     rgba(255, 255, 255, 0) 0%,
     #ffffff 100%
   );
-  /* background-color: red; */
 `;
 const Div = styled.div`
 position: relative;
@@ -178,7 +176,7 @@ export default function Contact() {
               </Text2>
               <InputBox>
                 <Input placeholder="Ваш email address" type="text" />
-                <Btn><BiChevronRight/></Btn>
+                <Btn><BiChevronRight /></Btn>
               </InputBox>
             </Card>
             <Mapp src={Map} alt="" />

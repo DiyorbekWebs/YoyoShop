@@ -25,6 +25,8 @@ font-weight: 400;
 font-size: 12px;
 line-height: 15px;
 color: #333333;
+cursor: pointer;
+
 `;
 const HeaderBottom = styled.div`
   display: flex;
@@ -38,6 +40,8 @@ const Item2 = styled.li`
   line-height: 15px;
   letter-spacing: 0em;
   text-align: left;
+  cursor: pointer;
+
 `;
 const List = styled.ul`
   display: flex;
@@ -69,6 +73,8 @@ const AllCategoryBtn = styled.div`
   padding: 11px 23px;
   border: 1px solid #ff5c00;
   border-radius: 30px;
+  cursor: pointer;
+
 `;
 const Right = styled.div`
   display: flex;
@@ -110,6 +116,7 @@ const ProductCount = styled.p`
   letter-spacing: 0em;
   text-align: left;
   color: #ff5c00;
+  cursor: default;
 `;
 export default function Header() {
   return (

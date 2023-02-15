@@ -75,8 +75,8 @@ const Paragrf2 = styled(Paragrf)`
   width: 247px;
 `;
 const FooterBottom = styled.div`
-  padding: 16px 30px;
-  border: 1px solid #EEEEEE;
+  padding: 16px 0px;
+  border-top: 1px solid #EEEEEE;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -177,18 +177,19 @@ export default function Footer() {
               </Item3>
             </List>
           </Box>
+          <FooterBottom>
+            <List2>
+              <Itemm2>Политика безопасности</Itemm2>
+              <Itemm2>Условия соглашения</Itemm2>
+              <Itemm2>Публичная оферта</Itemm2>
+            </List2>
+            <Design>
+              <Text1>Designed by:</Text1>
+              <Text2>Getter</Text2>
+            </Design>
+          </FooterBottom>
         </div>
-        <FooterBottom>
-          <List2>
-            <Itemm2>Политика безопасности</Itemm2>
-            <Itemm2>Условия соглашения</Itemm2>
-            <Itemm2>Публичная оферта</Itemm2>
-          </List2>
-          <Design>
-            <Text1>Designed by:</Text1>
-            <Text2>Getter</Text2>
-          </Design>
-        </FooterBottom>
+
       </Footerr>
     </>
   );
