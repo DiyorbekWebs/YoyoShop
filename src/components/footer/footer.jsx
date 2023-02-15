@@ -8,6 +8,7 @@ import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsTelephone } from "react-icons/bs";
 import styled from "styled-components";
+import { BiChevronDown } from "react-icons/bi";
 const Footerr = styled.footer`
 border: 1px solid #EEEEEE;
 `;
@@ -116,6 +117,10 @@ const Item3 = styled(Item2)`
   color: #5B5B5B;
 
 `
+const PhoneText = styled(Paragrf)`
+width: auto;
+margin-right: 4px;
+`
 export default function Footer() {
   return (
     <>
@@ -163,7 +168,8 @@ export default function Footer() {
               </Item3>
               <Item3>
                 <BsTelephone />
-                <Paragrf>+998 71 200 05 99</Paragrf>
+                <PhoneText>+998 71 200 05 99</PhoneText>
+                <BiChevronDown />
               </Item3>
               <Item3>
                 <AiOutlineMail />
